@@ -40,11 +40,21 @@ body {
   background-color: #fff;
   font-family: "Jost";
   font-weight: 500;
+  padding-top: 81px;
 }
 
 .header {
-  padding: 24px 0px 24px 0px;
+  padding: 14px 0px 14px 0px;
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  transition: transform 0.1s linear;
+}
+.header.hide {
+  transform: translateY(-81px);
 }
 .header__nav {
   display: flex;

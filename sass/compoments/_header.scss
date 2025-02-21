@@ -1,6 +1,16 @@
 .header {
-    padding: 24px 0px 24px 0px;
+    padding: 14px 0px 14px 0px;
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    transition: transform .1s linear;
+
+    &.hide {
+        transform: translateY(-81px)
+    }
 
     &__nav {
        @include centering(space-between, center);
