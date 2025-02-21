@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const videoContainer = document.getElementById("videoContainer");
 
     input.addEventListener("input", function () {
-        if (input.value === "1111") {
+        if (input.value === "Лайщук Ян") {
             videoContainer.style.display = "block"; // Показуємо відео
         }
     });
