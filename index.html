@@ -7,13 +7,96 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <input type="text" id="passwordInput" placeholder="Введіть код...">
-    <div id="videoContainer" style="display: none;">
-        <video width="600" controls>
-            <source src="./video/VID_20250220_123011_627.mp4.mov" type="video/mp4">
-            Ваш браузер не підтримує відео.
-        </video>
-    </div>
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav">
+                <a class="header__logo" href="">
+                    <span class="header__logo1">Sneaker</span><span class="header__logo2">.</span>
+                </a>
+                <ul class="header__list-link">
+                    <li class="header__item">
+                        <a href="" class="header__link">
+                            New
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a href="" class="header__link">
+                            Men
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a href="" class="header__link">
+                            Women
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a href="" class="header__link">
+                            Kids
+                        </a>
+                    </li>
+                </ul>
+                <ul class="header__icons-list">
+                    <li class="header__item">
+                        <div class="header__input-container">
+                            <button class="header__search-btn">
+                                <svg class="header__icon use header__icon-search">
+                                    <use href="./img/icons/symbol-defs.svg#icon-search"></use>
+                                </svg>
+                               
+                           </button>
+                           <input autocomplete="off" class="header__search-input" id="passwordInput" type="text">
+                        </div>
+                    </li>
+                    <li class="header__item">
+                        <a href="" class="header__icon-link">
+                            <svg class="header__icon use">
+                                <use href="./img/icons/symbol-defs.svg#icon-like"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a href="" class="header__icon-link">
+                            <svg class="header__icon use">
+                                <use href="./img/icons/symbol-defs.svg#icon-cart"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+             
+                <div id="videoContainer" style="display: none;">
+                    <video width="600" controls>
+                        <source src="./video/VID_20250220_123011_627.mp4.mov" type="video/mp4">
+                    </video>
+                </div> 
+            
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+        
 
         <script src="./js/script.js"></script>
 </body>
