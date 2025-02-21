@@ -1,6 +1,10 @@
 @import './base/_reset.scss';
 @import './base/_common.scss';
 
+@import './varlibers/_mixins';
+@import './varlibers/_placeholders';
+@import './varlibers/_varlibers';
+
 
 @import './compoments/_footer';
 @import './compoments/_header';

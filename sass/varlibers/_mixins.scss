@@ -1,0 +1,14 @@
+@mixin centering($justify-content, $align-items) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+
+}
+
+@mixin text($weight, $size) {
+    font: {
+        family: "Jost";
+        weight: $weight;
+        size: $size;
+    }
+}
