@@ -1,13 +1,52 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const input = document.getElementById("passwordInput");
-    const videoContainer = document.getElementById("videoContainer");
+(() => {
+    const refs = {
+        input: document.querySelector("#passwordInput"), 
+        modal: document.querySelector("[data-modal]"),
+        closeModalBtn: document.querySelector("[data-modal-close]"), 
+        video: document.querySelector("video") 
+    };
 
-    input.addEventListener("input", function () {
-        if (input.value === "Лайщук Ян") {
-            videoContainer.style.display = "block"; // Показуємо відео
+    const secretPhrase = "Лайщук Ян"; 
+
+    refs.input.addEventListener("input", checkInput);
+    refs.closeModalBtn.addEventListener("click", closeModal);
+    document.addEventListener("keydown", onEscPress);
+    refs.modal.addEventListener("click", onBackdropClick);
+
+    function checkInput() {
+        if (refs.input.value.trim() === secretPhrase) {
+            openModal();
         }
-    });
-});
+    }
+
+    function openModal() {
+        refs.modal.classList.remove("is-hidden");
+        document.body.classList.add("no-scroll");
+        refs.input.disabled = true; 
+    }
+
+    function closeModal() {
+        refs.modal.classList.add("is-hidden");
+        document.body.classList.remove("no-scroll");
+        refs.video.pause(); 
+        refs.video.currentTime = 0; 
+        refs.input.disabled = false;
+    }
+
+    function onEscPress(event) {
+        if (event.key === "Escape" && !refs.modal.classList.contains("is-hidden")) {
+            closeModal();
+        }
+    }
+
+    function onBackdropClick(event) {
+        if (event.target === refs.modal) {
+            closeModal();
+        }
+    }
+})();
+
+
 
 
 let lastScroll = 0;
