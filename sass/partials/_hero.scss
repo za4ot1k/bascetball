@@ -10,6 +10,7 @@
     }
 
     &__title {
+        margin-top: 10px;
         width: 435px;
         font-family: "Montserrat";
         font-weight: 900;
@@ -21,6 +22,7 @@
     }
 
     &__btn {
+        margin-top: 58px;
         display: block;
         border: 1px solid #111;
         border-radius: 4px;
@@ -32,6 +34,17 @@
         line-height: 150%;
         color: #111;
         font-family: "Jost";
+        transition: .3s;
+    }
+
+    &__btn:hover {
+        color: #fff;
+        background: $main-color;
+        transform: scale(1.15);
+    }
+
+    &__second-block {
+        position: relative;
     }
 
     &__text {
@@ -39,16 +52,31 @@
         z-index: -1;
         font-family: "Sofia Sans", serif;
         position: absolute;
+        top: 60px;
+        left: 90px;
         font-weight: 700;
         font-size: 150px;
         line-height: 80%;
         letter-spacing: -0.06em;
         text-transform: uppercase;
         color: transparent;
-        -webkit-text-stroke: 2px rgba(0, 0, 0, .3);
+        text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        opacity: 0.1;
     }
 
     &__img {
+        transform: rotate(-17deg);
         width: 1000px;
+    }
+
+    &__shadow {
+        width: 610px;
+        position: absolute;
+        bottom: -30px;
+        left: 100px;
+    }
+
+    &__sneaker-box {
+        position: relative;
     }
 }

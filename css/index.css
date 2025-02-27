@@ -170,6 +170,8 @@ body {
   right: 0;
   background-color: #fff;
   transition: transform 0.1s linear;
+  z-index: 1;
+  border-bottom: 1px solid #CACACB;
 }
 .header.hide {
   transform: translateY(-81px);
@@ -304,6 +306,7 @@ body {
   color: #111;
 }
 .hero__title {
+  margin-top: 10px;
   width: 435px;
   font-family: "Montserrat";
   font-weight: 900;
@@ -314,6 +317,7 @@ body {
   color: #111;
 }
 .hero__btn {
+  margin-top: 58px;
   display: block;
   border: 1px solid #111;
   border-radius: 4px;
@@ -325,20 +329,42 @@ body {
   line-height: 150%;
   color: #111;
   font-family: "Jost";
+  transition: 0.3s;
+}
+.hero__btn:hover {
+  color: #fff;
+  background: #111;
+  transform: scale(1.15);
+}
+.hero__second-block {
+  position: relative;
 }
 .hero__text {
   width: 500px;
   z-index: -1;
   font-family: "Sofia Sans", serif;
   position: absolute;
+  top: 60px;
+  left: 90px;
   font-weight: 700;
   font-size: 150px;
   line-height: 80%;
   letter-spacing: -0.06em;
   text-transform: uppercase;
   color: transparent;
-  -webkit-text-stroke: 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  opacity: 0.1;
 }
 .hero__img {
+  transform: rotate(-17deg);
   width: 1000px;
+}
+.hero__shadow {
+  width: 610px;
+  position: absolute;
+  bottom: -30px;
+  left: 100px;
+}
+.hero__sneaker-box {
+  position: relative;
 }/*# sourceMappingURL=index.css.map */

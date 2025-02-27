@@ -7,6 +7,8 @@
     right: 0;
     background-color: #fff;
     transition: transform .1s linear;
+    z-index: 1;
+    border-bottom: 1px solid #CACACB;
 
     &.hide {
         transform: translateY(-81px)
