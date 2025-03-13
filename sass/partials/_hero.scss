@@ -1,7 +1,11 @@
 .hero {
     padding: 40px 0px 40px 0px;
-    display: flex;
-    align-items: center;
+   
+
+    & .container {
+        display: flex;
+        align-items: center;
+    }
 
     &__subtitle {
         font-size: 17px;
@@ -19,6 +23,7 @@
         letter-spacing: -0.04em;
         text-transform: uppercase;
         color: #111;
+
     }
 
     &__btn {

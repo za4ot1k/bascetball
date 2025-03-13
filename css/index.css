@@ -297,6 +297,8 @@ body {
 
 .hero {
   padding: 40px 0px 40px 0px;
+}
+.hero .container {
   display: flex;
   align-items: center;
 }
@@ -367,4 +369,79 @@ body {
 }
 .hero__sneaker-box {
   position: relative;
+}
+
+.shoes {
+  padding: 70px 0px 70px 0px;
+}
+.shoes__side-bar {
+  width: 500px;
+  background-color: red;
+}
+.shoes__list {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 400px 400px 400px;
+}
+.shoes__item {
+  border: 1px solid red;
+  height: 700px;
+  background-color: aquamarine;
+}
+.shoes container {
+  display: flex;
+}
+
+.top {
+  padding: 100px 0px 100px 0px;
+}
+.top__title {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+.top__list {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+.top__item {
+  position: relative;
+  width: 380px;
+  border-radius: 10px;
+  height: 474px;
+  transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.top__item:hover .top__hover-block {
+  opacity: 1;
+  transition: 0.3s;
+}
+.top__img {
+  width: 100%;
+}
+.top__sub-title {
+  margin-left: 20px;
+  color: #FFF;
+  font-size: 36px;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 50px;
+}
+.top__text {
+  margin-left: 20px;
+  color: #FFF;
+  font-size: 16px;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 20px;
+}
+.top__hover-block {
+  opacity: 0;
+  background-color: rgba(22, 19, 59, 0.55);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.3s;
 }/*# sourceMappingURL=index.css.map */

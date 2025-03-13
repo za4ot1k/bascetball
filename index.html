@@ -7,10 +7,9 @@
     <title>Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./src/img/android-chrome-192x192.png">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
@@ -22,23 +21,23 @@
                     <span class="header__logo1">Sneaker</span><span class="header__logo2">.</span>
                 </a>
                 <ul class="header__list-link">
-                    <li class="header__item">
+                    <li class="header__item  animate__animated animate__shakeX">
                         <a href="./src/pages/new.html" class="header__link">
                             New
                         </a>
                     </li>
                     <li class="header__item">
-                        <a href="./src/pages/men.html" class="header__link">
+                        <a href="./src/pages/men.html" class="header__link animate__animated animate__shakeX">
                             Men
                         </a>
                     </li>
                     <li class="header__item">
-                        <a href="./src/pages/women.html" class="header__link">
+                        <a href="./src/pages/women.html" class="header__link animate__animated animate__shakeX">
                             Women
                         </a>
                     </li>
                     <li class="header__item">
-                        <a href="/" class="header__link">
+                        <a href="/" class="header__link animate__animated animate__shakeX">
                             Kids
                         </a>
                     </li>
@@ -77,16 +76,17 @@
     </header>
 
     <main>
-        <div class="container">
+        
             <section class="hero">
-                <div class="hero__first-block">
-                    <h2 class="hero__subtitle">
+                <div class="container">
+                <div class="hero__first-block ">
+                    <h2 class="hero__subtitle animate__animated animate__fadeInUp">
                         Sneaker Collection
                     </h2>
-                    <h1 class="hero__title">
+                    <h1 class="hero__title animate__animated animate__slideInLeft">
                         Good shoes take you good places
                     </h1>
-                    <button data-modal-open class="hero__btn">
+                    <button data-modal-open class="hero__btn animate__animated">
                         Shop Now
                     </button>
                 </div>
@@ -95,19 +95,58 @@
                         NYKEN
                         AIR
                     </p>
-                    <div class="hero__sneaker-box">
+                    <div class="hero__sneaker-box animate__animated animate__slideInRight">
                         <img class="hero__img" src="./src/img/destop/Mask Group of Shoes.png" alt="">
                         <img class="hero__shadow" src="./src/img/destop/Shoes Shadow.png" alt="">
                     </div>
                 </div>
+            </div>
             </section>
-        </div>
+        <section class="top">
+            <div class="container">
+                <h2 class="top__title">
+                    Top Picks
+                </h2>
+                <ul class="top__list">
+                    <li class="top__item">
+                        <img src="./src/img/destop/KD17.png" alt="" class="top__img">
+                        <div class="top__hover-block">
+                            <h3 class="top__sub-title">
+                                Nike KD17
+                            <h3 class="top__sub-title"></h3>
+                            <p class="top__text">$150</p>
+                        </div>
+                    </li>
+                    <li class="top__item">
+                        <img src="./src/img/destop/JORDAN+LUKA+3.png" alt="" class="top__img">
+                        <div class="top__hover-block">
+                            <h3 class="top__sub-title">
+                                Luka 3
+                            </h3>
+                            <p class="top__text">
+                                $130
+                            </p>
+                        </div>
+                    </li>
+                    <li class="top__item">
+                        <img src="./src/img/destop/BOOK+1+SE.png" alt="" class="top__img">
+                        <div class="top__hover-block">
+                            <h3 class="top__sub-title">
+                                Book 1 "Mowabb"
+                            </h3>
+                            <p class="top__text"> $150</p>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer animate__animated animate__slideInUp">
         <div class="container footer__reletive">
             <div class="footer__logo-container">
-                <a class="header__logo" href="">
+                <a class="header__logo animate__animated" href="">
                     <span class="header__logo1">Sneaker</span><span class="header__logo2">.</span>
                 </a>
             </div>
