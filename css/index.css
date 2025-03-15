@@ -37,6 +37,7 @@ img {
 }
 
 body {
+  margin: 0;
   background-color: #fff;
   font-family: "Jost";
   font-weight: 500;
@@ -444,4 +445,41 @@ body {
   right: 0;
   bottom: 0;
   transition: 0.3s;
+}
+
+.Dunk {
+  padding: 80px 0px 90px 0px;
+  transition: 0.5s;
+}
+.Dunk .container {
+  padding: 0;
+}
+.Dunk__flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Dunk__title {
+  font-size: 66px;
+  font-weight: 900;
+}
+.Dunk__img {
+  color: rgb(18, 44, 19);
+  width: 700px;
+  transform: rotate(-30deg);
+}
+.Dunk__button-right, .Dunk__button-left {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  z-index: 1;
+}
+.Dunk__icon {
+  width: 60px;
+  height: 60px;
+  transition: 0.2s;
+  fill: #fff;
+}
+.Dunk__icon:hover {
+  transform: scale(1.2);
 }/*# sourceMappingURL=index.css.map */

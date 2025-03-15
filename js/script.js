@@ -68,3 +68,55 @@ window.addEventListener('scroll', () => {
 
     lastScroll = scrollPosition();
 })
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".Dunk__img");
+    const buttonLeft = document.querySelector(".Dunk__button-left");
+    const buttonRight = document.querySelector(".Dunk__button-right");
+    const section = document.querySelector(".Dunk");
+    const title = document.querySelector(".Dunk__title");
+    const description = document.querySelector(".Dunk__discription");
+    let currentIndex = 0;
+
+    const slideData = [
+        { bgColor: "#f5f5f5", title: "Red SB Dunk", description: "View All Red Dunks" },
+        { bgColor: "#d1e8e2", title: "Brown SB Dunk", description: "View All Brown Dunks" },
+        { bgColor: "#c2e1ff", title: "Green SB Dunk", description: "View All Green Dunks" },
+        { bgColor: "#b0c4de", title: "Blue SB Dunk", description: "View All Blue Dunks" }
+    ];
+
+    function updateSlider(index) {
+        images.forEach((img, i) => {
+            img.style.display = i === index ? "block" : "none";
+        });
+        updateBackground(index);
+        updateText(index);
+    }
+
+    function updateBackground(index) {
+        section.style.backgroundColor = slideData[index].bgColor || "#ffffff";
+    }
+
+    function updateText(index) {
+        title.textContent = slideData[index].title;
+        description.textContent = slideData[index].description;
+    }
+
+    function handleButtonClick(direction) {
+        currentIndex = (currentIndex + direction + images.length) % images.length;
+        updateSlider(currentIndex);
+    }
+
+    [buttonLeft, buttonRight].forEach(button => {
+        button.addEventListener("click", function () {
+            handleButtonClick(button === buttonRight ? 1 : -1);
+        });
+        button.querySelector("svg")?.addEventListener("click", function (event) {
+            event.stopPropagation(); // Запобігає подвійному виклику
+            handleButtonClick(button === buttonRight ? 1 : -1);
+        });
+    });
+
+    updateSlider(currentIndex);
+});
