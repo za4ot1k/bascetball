@@ -80,9 +80,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentIndex = 0;
 
     const slideData = [
-        { bgColor: "#f5f5f5", title: "Red SB Dunk", description: "View All Red Dunks" },
+        { bgColor: "rgb(175, 156, 151)", title: "Red SB Dunk", description: "View All Red Dunks" },
         { bgColor: "#d1e8e2", title: "Brown SB Dunk", description: "View All Brown Dunks" },
-        { bgColor: "#c2e1ff", title: "Green SB Dunk", description: "View All Green Dunks" },
+        { bgColor: "rgb(155, 176, 156)", title: "Green SB Dunk", description: "View All Green Dunks" },
         { bgColor: "#b0c4de", title: "Blue SB Dunk", description: "View All Blue Dunks" }
     ];
 
