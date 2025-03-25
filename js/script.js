@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const slideData = [
         { bgColor: "rgb(175, 156, 151)", title: "Red SB Dunk", description: "View All Red Dunks" },
-        { bgColor: "#d1e8e2", title: "Brown SB Dunk", description: "View All Brown Dunks" },
+        { bgColor: "#d1e8e2", title: "Nike Dunk Low Pro Sb Dark Mocha", description: "View All Brown Dunks" },
         { bgColor: "rgb(155, 176, 156)", title: "Green SB Dunk", description: "View All Green Dunks" },
         { bgColor: "#b0c4de", title: "Blue SB Dunk", description: "View All Blue Dunks" }
     ];

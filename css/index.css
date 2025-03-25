@@ -375,22 +375,59 @@ body {
 .shoes {
   padding: 70px 0px 70px 0px;
 }
-.shoes__side-bar {
-  width: 500px;
-  background-color: red;
+.shoes__box {
+  margin-top: 17px;
+  display: flex;
+  gap: 10px;
 }
 .shoes__list {
   display: grid;
-  gap: 5px;
-  grid-template-columns: 400px 400px 400px;
+  gap: 15px;
+  grid-template-columns: 300px 300px 300px;
 }
 .shoes__item {
-  border: 1px solid red;
-  height: 700px;
-  background-color: aquamarine;
+  border-radius: 10px;
+  height: 420px;
 }
-.shoes container {
+.shoes__side-bar-text {
+  font-weight: 500;
+  font-size: 14px;
+}
+.shoes__side-bar-title {
+  font-size: 25px;
+  font-weight: 500;
+}
+.shoes__side-bar {
+  width: 180px;
+}
+.shoes__side-bar-link {
+  cursor: pointer;
+}
+.shoes__side-bar-list {
   display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.shoes__side-bar-link {
+  font-size: 14px;
+}
+.shoes__title {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+.shoes__subtitle {
+  color: #5b5b5b;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 3px;
+}
+.shoes__price {
+  color: #1f1f1f;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 3px;
 }
 
 .top {
