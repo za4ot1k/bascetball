@@ -47,8 +47,6 @@
 })();
 
 
-
-
 let lastScroll = 0;
 const defaultOffset = 200;
 const header = document.querySelector('.header');
@@ -58,17 +56,16 @@ const containHide = () => header.classList.contains('hide');
 
 window.addEventListener('scroll', () => {
     if(scrollPosition() > lastScroll && !containHide() && scrollPosition() > defaultOffset) {
-        //scroll down
+        // scroll down
         header.classList.add('hide');
     }
     else if(scrollPosition() < lastScroll && containHide()){
-        //scroll up
+        // scroll up
         header.classList.remove('hide');
     }
 
     lastScroll = scrollPosition();
-})
-
+});
 
 document.addEventListener("DOMContentLoaded", function () {
     const images = document.querySelectorAll(".Dunk__img");
@@ -80,10 +77,10 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentIndex = 0;
 
     const slideData = [
-        { bgColor: "rgb(175, 156, 151)", title: "Red SB Dunk", description: "View All Red Dunks" },
-        { bgColor: "#d1e8e2", title: "Nike Dunk Low Pro Sb Dark Mocha", description: "View All Brown Dunks" },
-        { bgColor: "rgb(155, 176, 156)", title: "Green SB Dunk", description: "View All Green Dunks" },
-        { bgColor: "#b0c4de", title: "Blue SB Dunk", description: "View All Blue Dunks" }
+        { bgColor: "#95A1A7", titleColor: "#fff", title: "Blue SB Dunk", description: "View All Blue Dunks" },
+        { bgColor: "#B84D50", titleColor: "#9B2C2C", title: "Red SB Dunk", description: "View All Red Dunks" },
+        { bgColor: "#D1B69E", titleColor: "#4B2E83", title: "Brown SB Dunk", description: "View All Brown Dunks" },
+        { bgColor: "#A2B688", titleColor: "#1D4D3F", title: "Green SB Dunk", description: "View All Green Dunks" }
     ];
 
     function updateSlider(index) {
@@ -101,6 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function updateText(index) {
         title.textContent = slideData[index].title;
         description.textContent = slideData[index].description;
+        title.style.color = slideData[index].titleColor || "#000000"; // Зміна кольору заголовка
     }
 
     function handleButtonClick(direction) {
