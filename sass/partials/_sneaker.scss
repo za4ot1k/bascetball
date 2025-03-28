@@ -1,0 +1,251 @@
+.sneaker {
+    padding: 50px 0px 80px 0px;
+    
+    &__flex-box {
+        width: 1000px;
+        display: flex;
+        position: relative;
+        gap: 10px;
+    }
+
+    .sneaker__sticky {
+        display: flex;
+        position: sticky;
+        top: 0;
+    }
+
+    
+
+    &__img-list {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    &__img-list li {
+        position: relative;    
+    }
+
+    &__img-item {
+        width: 60px;
+        cursor: pointer;
+        
+    }
+
+    &__img-fone {
+        border-radius: 5px;
+        opacity: 0;
+        top: 0;
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background-color: black;
+    }
+
+    &__img-fone:active,  &__img-fone:hover {
+        opacity: .2;
+    } 
+
+    &__img-fone:nth-child(1) {
+        opacity: .2;
+    }
+
+    &__part2 {
+        position: relative;
+    }
+
+    &__img-text-block {
+        top: 25px;
+        left: 40px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    &__img-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    &__img {
+        border-radius: 40px;
+        width: 535px;
+    }
+
+    &__slide-btn {
+       width: 60px;
+       height: 60px;
+       background-color: transparent;
+       border: none;
+       outline: none;
+    }
+
+    &__btn-list {
+        top: 480px;
+        right: 0;
+        position: absolute;
+        justify-content: end;
+        display: flex;
+    }
+
+
+
+    &__icon {
+        fill: #000;
+    }
+
+    &__part3 {
+        max-width: 367px;
+    }
+
+    &__name {
+        font-weight: 400;
+        font-size: 22px;
+    }
+
+    &__text {
+        font-size: 16px;
+        color: #707072;
+    }
+
+    .sneaker__text-box {
+        margin-top: 5px;
+        display: flex;
+        gap: 5px;
+        font-size: 15px;
+    }
+
+    .sneaker__text-price1 {
+        color: #111111;
+    }
+
+    .sneaker__text-price2 {
+        color: #707072;
+    }
+
+    .sneaker__text-price3 {
+        color: #007d48;
+    }
+
+    .sneaker__colors-list {
+        margin-top: 15px;
+        width: 375px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .sneaker__colors-list li {
+        border-radius: 7px;
+        width: 70px;
+        height: 70px;
+        cursor: pointer;
+       
+    }
+
+    .sneaker__text-size {
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .sneaker__btn-size-list {
+        margin-top: 5px;
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+
+    }
+
+    .sneaker__size-button {
+        height: 40px;
+        border-radius: 3px;
+        font-family: "Jost";
+        border: 1px solid #d6d6d6;
+        display: block;
+        width: 181px;
+    }
+
+    .sneaker__size-button:hover {
+        border: 1px solid #111111;
+    }
+
+    .sneaker__btn-bag {
+        font-size: 16px;
+        background-color: #111111;
+        display: block;
+        font-family: "Jost";
+        color: #fff;
+        border: none;
+        outline: none;
+        border-radius: 100px;
+        width: 100%;
+        height: 55px;
+        font-weight: 600;
+    }
+    
+    .sneaker__discription-block {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0px 50px 0px;
+    }
+
+    .sneaker__discription-text {
+        width: 300px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .sneaker__discription-text span {
+        font-weight: 500;
+    }
+
+    .sneaker__discription-text a {
+        text-decoration: underline;
+        color: $main-color;
+    }
+
+    .sneaker__btn-like {
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: 16px;
+        background-color: transparent;
+        display: flex;
+        font-family: "Jost";
+        color: #111111;
+        border: 1px solid #d6d6d6;
+        outline: none;
+        border-radius: 100px;
+        width: 100%;
+        height: 55px;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .sneaker__btn-like svg {
+        fill: #111111;
+        width: 23px;
+        height: 23px;
+    }
+
+    .sneaker__title {
+        font-size: 19px;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+
+    .sneaker__subtitle {
+        margin-top: 5px;
+        font-size: 17px;
+        font-weight: 400;
+       
+    }
+
+    .sneaker__discription {
+        margin-top: 2px;
+    }
+}
