@@ -1,0 +1,28 @@
+.cards {
+    padding: 30px 0px 30px 0px;
+
+    &__list {
+    
+        display: flex;
+       justify-content: space-between;
+    }
+
+    &__list li {
+        position: relative;
+    }
+
+    &__img {
+        width: 382px;
+        height: 467px;
+    }
+
+    .card__text {
+        display: block;
+        background-color: #fff;
+        border-radius: 50px;
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        padding: 5px 20px;
+    }
+}

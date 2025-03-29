@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function updateText(index) {
         title.textContent = slideData[index].title;
         description.textContent = slideData[index].description;
-        title.style.color = slideData[index].titleColor || "#000000"; // Зміна кольору заголовка
+        title.style.color = slideData[index].titleColor || "#000000"; 
     }
 
     function handleButtonClick(direction) {
@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
             handleButtonClick(button === buttonRight ? 1 : -1);
         });
         button.querySelector("svg")?.addEventListener("click", function (event) {
-            event.stopPropagation(); // Запобігає подвійному виклику
+            event.stopPropagation(); 
             handleButtonClick(button === buttonRight ? 1 : -1);
         });
     });
@@ -123,37 +123,4 @@ document.addEventListener("DOMContentLoaded", function () {
     updateSlider(currentIndex);
 });
 
-// Отримуємо необхідні елементи
-document.addEventListener('DOMContentLoaded', function() {
-    const likeButtons = document.querySelectorAll('.sneaker__btn-like');
-    const modalFone = document.querySelector('.modal__fone');
-    const modal = document.querySelector('.modal');
-    const closeButton = document.querySelector('.modal__button-close');
 
-    // Перевіряємо, чи елементи існують
-    if (!likeButtons.length || !modalFone || !modal || !closeButton) {
-        console.error('Помилка: Не знайдено один або кілька елементів!');
-        return;
-    }
-
-    function showModalFor10Seconds() {
-        modalFone.style.display = 'block';
-        modal.style.display = 'block';
-        setTimeout(() => {
-            modalFone.style.display = 'none';
-            modal.style.display = 'none';
-        }, 10000);
-    }
-
-    // Делегування подій для динамічних кнопок
-    document.body.addEventListener('click', function(e) {
-        if (e.target.closest('.sneaker__btn-like')) {
-            showModalFor10Seconds();
-        }
-    });
-
-    closeButton.addEventListener('click', function() {
-        modalFone.style.display = 'none';
-        modal.style.display = 'none';
-    });
-});

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 ol,
 ul {
   list-style: none;
@@ -789,6 +790,128 @@ body {
   right: 0;
   bottom: 0;
   transition: 0.3s;
+}
+
+.Luka {
+  padding: 30px 0px 30px 0px;
+}
+.Luka__background {
+  height: 920px;
+  background-position: end;
+  background-size: cover;
+  background: url(./../../src/img/destop/Знімок\ екрана\ 2025-03-29\ 150953.png);
+  background-repeat: no-repeat;
+}
+.Luka__link {
+  color: #fff;
+  background-color: #000;
+  border-radius: 50px;
+  text-align: center;
+  display: block;
+  border: none;
+  outline: none;
+  padding: 7px 15px;
+  margin: 20px auto;
+  font-family: "Jost";
+  font-weight: 400;
+  font-size: 18px;
+}
+.Luka__text {
+  font-size: 18px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 459px;
+  font-weight: 400;
+}
+.Luka__title {
+  font-weight: 900;
+  font-size: 58px;
+  letter-spacing: -2px;
+  text-align: center;
+}
+.Luka__subtitle {
+  font-size: 18px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 459px;
+  font-weight: 400;
+}
+
+.cards {
+  padding: 30px 0px 30px 0px;
+}
+.cards__list {
+  display: flex;
+  justify-content: space-between;
+}
+.cards__list li {
+  position: relative;
+}
+.cards__img {
+  width: 382px;
+  height: 467px;
+}
+.cards .card__text {
+  display: block;
+  background-color: #fff;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  padding: 5px 20px;
+}
+
+.nikeTop {
+  padding: 50px 0px 60px 0px;
+}
+.nikeTop__slide {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.nikeTop__list {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  white-space: nowrap;
+  max-width: 1500px;
+  padding: 10px 0;
+  scroll-snap-type: x mandatory;
+}
+.nikeTop__list li {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+}
+.nikeTop__slide-btn1, .nikeTop__slide-btn2 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+  z-index: 10;
+}
+.nikeTop__slide-btn1 {
+  left: 10px;
+}
+.nikeTop__slide-btn2 {
+  right: 10px;
+}
+.nikeTop__img {
+  max-width: 280px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.nikeTop__list::-webkit-scrollbar {
+  display: none;
 }
 
 .Dunk {

@@ -1,0 +1,60 @@
+.nikeTop {
+    padding: 50px 0px 60px 0px;
+
+    &__slide {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__list {
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        white-space: nowrap;
+        max-width: 1500px; 
+        padding: 10px 0;
+
+        scroll-snap-type: x mandatory;
+    }
+
+    &__list li {
+        flex: 0 0 auto;
+        scroll-snap-align: center;
+    }
+
+    &__slide-btn1,
+    &__slide-btn2 {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        border: none;
+        outline: none;
+        background-color: #fff;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    &__slide-btn1 {
+        left: 10px;
+    }
+
+    &__slide-btn2 {
+        right: 10px;
+    }
+
+    &__img {
+        max-width: 280px;
+        height: auto;
+        transition: transform 0.3s ease;
+    }
+}
+
+
+.nikeTop__list::-webkit-scrollbar {
+    display: none;
+}
