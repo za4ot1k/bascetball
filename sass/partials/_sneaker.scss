@@ -11,6 +11,7 @@
     .sneaker__sticky {
         display: flex;
         position: sticky;
+        gap: 15px;
         top: 0;
     }
 
@@ -19,14 +20,16 @@
     &__img-list {
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        gap: 10px;
     }
 
     &__img-list li {
-        position: relative;    
+        position: relative;   
+        border-radius: 10px; 
     }
 
     &__img-item {
+        border-radius: 5px;
         width: 60px;
         cursor: pointer;
         
@@ -55,8 +58,11 @@
     }
 
     &__img-text-block {
+        border-radius: 50px;
+        padding: 8px 16px ;
+        background-color: #fff;
         top: 25px;
-        left: 40px;
+        left: 25px;
         position: absolute;
         display: flex;
         align-items: center;
@@ -69,24 +75,26 @@
     }
 
     &__img {
-        border-radius: 40px;
+        border-radius: 10px;
         width: 535px;
     }
 
     &__slide-btn {
-       width: 60px;
-       height: 60px;
-       background-color: transparent;
+        border-radius: 50px;
+       background-color: #fff;
+       width: 45px;
+       height: 45px;
        border: none;
        outline: none;
     }
 
     &__btn-list {
-        top: 480px;
-        right: 0;
+        top: 603px;
+        right: 20px;
         position: absolute;
         justify-content: end;
         display: flex;
+        gap: 10px;
     }
 
 
@@ -142,6 +150,10 @@
         height: 70px;
         cursor: pointer;
        
+    }
+
+    .sneaker__colors-block {
+        border-radius: 5px;
     }
 
     .sneaker__text-size {

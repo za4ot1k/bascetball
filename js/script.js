@@ -1,3 +1,4 @@
+
 (() => {
     const refs = {
         input: document.querySelector("#passwordInput"), 
@@ -67,6 +68,9 @@ window.addEventListener('scroll', () => {
     lastScroll = scrollPosition();
 });
 
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const images = document.querySelectorAll(".Dunk__img");
     const buttonLeft = document.querySelector(".Dunk__button-left");
@@ -117,4 +121,39 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     updateSlider(currentIndex);
+});
+
+// Отримуємо необхідні елементи
+document.addEventListener('DOMContentLoaded', function() {
+    const likeButtons = document.querySelectorAll('.sneaker__btn-like');
+    const modalFone = document.querySelector('.modal__fone');
+    const modal = document.querySelector('.modal');
+    const closeButton = document.querySelector('.modal__button-close');
+
+    // Перевіряємо, чи елементи існують
+    if (!likeButtons.length || !modalFone || !modal || !closeButton) {
+        console.error('Помилка: Не знайдено один або кілька елементів!');
+        return;
+    }
+
+    function showModalFor10Seconds() {
+        modalFone.style.display = 'block';
+        modal.style.display = 'block';
+        setTimeout(() => {
+            modalFone.style.display = 'none';
+            modal.style.display = 'none';
+        }, 10000);
+    }
+
+    // Делегування подій для динамічних кнопок
+    document.body.addEventListener('click', function(e) {
+        if (e.target.closest('.sneaker__btn-like')) {
+            showModalFor10Seconds();
+        }
+    });
+
+    closeButton.addEventListener('click', function() {
+        modalFone.style.display = 'none';
+        modal.style.display = 'none';
+    });
 });
