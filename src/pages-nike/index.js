@@ -31,6 +31,44 @@ document.querySelector('.sneaker__btn-like').addEventListener('click', function(
 });
 
 
+document.querySelector('.sneaker__btn-bag').addEventListener('click', function(event) {
+    const modalFone = document.querySelector('.modal__fone2');
+    const modal = document.querySelector('.modal__bag');
+    const body = document.body;
+    const closeButton = modal.querySelector('.modal__button-close');
+    const scrollPosition = window.scrollY; 
+    
+    // Запобігаємо зсуву контенту при відкритті модалки
+    body.style.paddingRight = window.innerWidth - document.documentElement.clientWidth + 'px'; 
+    modalFone.style.display = 'block';
+    modal.style.display = 'block';
+    body.style.overflow = 'hidden'; 
+    window.scrollTo({ top: 0, behavior: 'smooth' }); 
+    
+    // Функція для закриття модалки
+    const closeModal = () => {
+        modalFone.style.display = 'none';
+        modal.style.display = 'none';
+        body.style.overflow = ''; 
+        body.style.paddingRight = ''; 
+        window.scrollTo({ top: scrollPosition, behavior: 'instant' });
+    };
+    
+    // Автоматичне закриття через 10 секунд
+    setTimeout(closeModal, 10000);
+    
+    // Закриття по кнопці
+    closeButton.addEventListener('click', closeModal);
+    
+    // Закриття по кліку на фон
+    modalFone.addEventListener('click', (event) => {
+        if (event.target === modalFone) {
+            closeModal();
+        }
+    });
+});
+
+
 
 (() => {
     const refs = {

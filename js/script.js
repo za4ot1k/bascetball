@@ -57,11 +57,11 @@ const containHide = () => header.classList.contains('hide');
 
 window.addEventListener('scroll', () => {
     if(scrollPosition() > lastScroll && !containHide() && scrollPosition() > defaultOffset) {
-        // scroll down
+        
         header.classList.add('hide');
     }
     else if(scrollPosition() < lastScroll && containHide()){
-        // scroll up
+       
         header.classList.remove('hide');
     }
 
