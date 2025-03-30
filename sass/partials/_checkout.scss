@@ -174,22 +174,77 @@
         margin-top: 30px;
     }
 
-    .checkaut__cards-img {
+    &__cards-img {
         width: 60px;
         height: 60px;
     }
 
-    .checkaut__cards-title {
+    &__cards-title {
         font-size: 18px;
         font-weight: 400;
     }
 
-    .checkaut__cards-price {
+    &__cards-price {
         color: #acacac;
         margin-top: 2px;
         font-size: 16px;
         font-weight: 400;
     }
 
+    &__modal-window {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        justify-content: center;
+        border-radius: 10px;
+        height: 250px;
+        width: 440px;
+        background-color: #fff;
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__modal-title {
+        color: #111;
+        text-align: center;
+    
+    }
+
+    &__modal-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #111;
+        border: 1px solid #111;
+        color: #fff;
+        border-radius: 50px;
+        width: 250px;
+        height: 50px;
+        transition: .3s;
+    } 
+
+    &__modal-close {
+        right: 20px;
+        top: 17px;
+        position: absolute;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        width: 27px;
+        height: 27px;
+    }
+
+    
+
+
+
+
 
 }
+

@@ -972,6 +972,9 @@ body {
   border-radius: 10px;
   background-color: #007D48;
 }
+.cart .cart__modal {
+  background-color: red;
+}
 
 .nikeTop {
   padding: 50px 0px 60px 0px;
@@ -1176,19 +1179,62 @@ body {
 .checkout__cart-cards {
   margin-top: 30px;
 }
-.checkout .checkaut__cards-img {
+.checkout__cards-img {
   width: 60px;
   height: 60px;
 }
-.checkout .checkaut__cards-title {
+.checkout__cards-title {
   font-size: 18px;
   font-weight: 400;
 }
-.checkout .checkaut__cards-price {
+.checkout__cards-price {
   color: #acacac;
   margin-top: 2px;
   font-size: 16px;
   font-weight: 400;
+}
+.checkout__modal-window {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+  border-radius: 10px;
+  height: 250px;
+  width: 440px;
+  background-color: #fff;
+}
+.checkout__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checkout__modal-title {
+  color: #111;
+  text-align: center;
+}
+.checkout__modal-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+  border: 1px solid #111;
+  color: #fff;
+  border-radius: 50px;
+  width: 250px;
+  height: 50px;
+  transition: 0.3s;
+}
+.checkout__modal-close {
+  right: 20px;
+  top: 17px;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 27px;
+  height: 27px;
 }
 
 .Dunk {
