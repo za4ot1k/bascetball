@@ -84,5 +84,99 @@
 
 
 .footer {
-    background-color: black;
+    z-index: 1;
+    background-color: #121212;
+    padding: 70px 0px 70px 0px;
+
+    &__icon {
+        fill: #e3dddd;
+        width: 25px;
+        height: 25px;
+
+    }
+
+    &__list-block {
+        display: flex;
+        gap: 50px;
+        justify-content: space-between;
+    }
+
+    &__list-block li .header__logo .header__logo1 {
+        color: #e3dddd;
+    }
+
+    &__list-icon-link {
+        margin-top: 20px;
+        display: flex;
+        gap: 10px;
+    }
+
+    &__title {
+        color: #e3dddd71;
+        font-weight: 500; 
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    &__list-link {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    &__link {
+        color: #e3dddddf;
+
+    }
+
+    &__button {
+        display: block;
+        font-family: "Jost";
+        font-weight: 500;
+        margin-top: 30px;
+        width: 200px;
+        background-color: #e3dddd;
+        border: none;
+        outline: none;
+        height: 45px;
+        background-color: #ad2e2e;
+        color: #e3dddd;
+    }
+
+    &__input {
+        color: #e3dddd4d;
+        width: 400px;
+        font-size: 16px;
+        padding: 10px 20px 10px 0;
+        font-family: "Jost";
+        font-weight: 500;
+        border: none;
+        outline: none;
+        display: block;
+        background-color: transparent;
+        border-bottom: 2px solid #e3dddd4d;
+    }
+
+
+    &__subtitle {
+        color: #e3dddddf;
+        font-weight: 500; 
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    &__btn-block {
+       
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__btn-block form {
+        display: flex;
+        flex-direction: column;
+       
+    }
+
 }

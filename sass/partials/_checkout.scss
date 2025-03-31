@@ -61,6 +61,7 @@
     }
 
     &-btn {
+        transition: .3s;
         width: 331px;
         font-size: 18px;
         padding: 15px 20px;
@@ -112,6 +113,7 @@
     }
 
     &__save {
+        transition: .3s ;
         display: flex;
         margin: 20px 0px 0px auto;
         font-weight: 500;

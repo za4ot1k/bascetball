@@ -217,7 +217,83 @@ html {
 }
 
 .footer {
-  background-color: black;
+  z-index: 1;
+  background-color: #121212;
+  padding: 70px 0px 70px 0px;
+}
+.footer__icon {
+  fill: #e3dddd;
+  width: 25px;
+  height: 25px;
+}
+.footer__list-block {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+}
+.footer__list-block li .header__logo .header__logo1 {
+  color: #e3dddd;
+}
+.footer__list-icon-link {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+.footer__title {
+  color: rgba(227, 221, 221, 0.4431372549);
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.footer__list-link {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer__link {
+  color: rgba(227, 221, 221, 0.8745098039);
+}
+.footer__button {
+  display: block;
+  font-family: "Jost";
+  font-weight: 500;
+  margin-top: 30px;
+  width: 200px;
+  background-color: #e3dddd;
+  border: none;
+  outline: none;
+  height: 45px;
+  background-color: #ad2e2e;
+  color: #e3dddd;
+}
+.footer__input {
+  color: rgba(227, 221, 221, 0.3019607843);
+  width: 400px;
+  font-size: 16px;
+  padding: 10px 20px 10px 0;
+  font-family: "Jost";
+  font-weight: 500;
+  border: none;
+  outline: none;
+  display: block;
+  background-color: transparent;
+  border-bottom: 2px solid rgba(227, 221, 221, 0.3019607843);
+}
+.footer__subtitle {
+  color: rgba(227, 221, 221, 0.8745098039);
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.footer__btn-block {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer__btn-block form {
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -825,6 +901,9 @@ html {
   padding: 5px 20px;
 }
 
+.cart {
+  padding-bottom: 200px;
+}
 .cart .container {
   width: 1077px;
 }
@@ -1083,6 +1162,7 @@ html {
   outline: 2px solid #000;
 }
 .checkout-btn {
+  transition: 0.3s;
   width: 331px;
   font-size: 18px;
   padding: 15px 20px;
@@ -1131,6 +1211,7 @@ html {
   text-underline-offset: 4px;
 }
 .checkout__save {
+  transition: 0.3s;
   display: flex;
   margin: 20px 0px 0px auto;
   font-weight: 500;
@@ -1242,7 +1323,7 @@ html {
 }
 
 .Dunk {
-  padding: 180px 0px 180px 0px;
+  padding: 280px 0px 280px 0px;
   transition: 0.5s;
 }
 .Dunk__flex-box {
@@ -1255,6 +1336,7 @@ html {
   position: absolute;
   right: -100px;
   top: -400px;
+  z-index: 0;
 }
 .Dunk__box {
   margin-right: 400px;
@@ -1282,6 +1364,7 @@ html {
   color: #3F5067;
 }
 .Dunk__img {
+  z-index: 10;
   top: -95px;
   right: 30px;
   position: absolute;
