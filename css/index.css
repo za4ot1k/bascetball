@@ -1385,4 +1385,110 @@ html {
 }
 .Dunk__icon:hover {
   transform: scale(1.2);
+}
+
+.accessories {
+  padding: 100px 0px 50px 0px;
+}
+.accessories__title {
+  margin-left: 40px;
+  font-size: 30px;
+  font-weight: 500;
+}
+.accessories__cards-list {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.accessories__img {
+  width: calc(100% - 20px);
+}
+.accessories__text {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.dn {
+  padding-left: 50px 0px 70px 0px;
+}
+.dn__img {
+  margin-bottom: 40px;
+}
+.dn__subtitle {
+  font-size: 18px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 459px;
+  font-weight: 400;
+}
+.dn__title {
+  font-weight: 900;
+  font-size: 58px;
+  letter-spacing: -2px;
+  text-align: center;
+}
+.dn__text {
+  font-size: 18px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 459px;
+  font-weight: 400;
+}
+
+.like {
+  padding: 100px 0px 100px 0px;
+}
+.like__card {
+  position: relative;
+  margin-top: 30px;
+  width: calc(33.3333333333% - 21px);
+}
+.like__icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.like__title1 {
+  font-weight: 400;
+  font-size: 32px;
+}
+.like__title {
+  font-weight: 500;
+  font-size: 18px;
+}
+.like__price1 {
+  font-size: 18px;
+  color: #757575;
+  font-weight: 500;
+}
+.like__price2 .like__text {
+  font-size: 18px;
+  color: #757575;
+}
+.like__text-box {
+  display: flex;
+  justify-content: space-between;
+}
+.like__text-box3 {
+  display: flex;
+  gap: 5px;
+}
+.like__btn {
+  font-weight: 400;
+  color: #111;
+  padding: 10px 25px;
+  border-radius: 22px;
+  border: 2px solid rgba(133, 133, 133, 0.1843137255);
+  font-family: "Jost";
+  font-size: 18px;
+  transition: 0.3s;
+  margin-top: 15px;
+}
+.like__btn:hover {
+  border: 2px solid #111;
+  background-color: #111;
+  color: #fff;
+  transform: scale(1.1);
 }/*# sourceMappingURL=index.css.map */
